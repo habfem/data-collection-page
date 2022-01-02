@@ -1,0 +1,210 @@
+<div class="Survey-form">
+  <div class= "header">
+    <h1 id="title" class="text">Mbaolab Data for Typhoid diagnostics</h1>
+    <p id="description" class="text">Data collection tool for Typhoid diagnostics, kindly fill out this Survey. Thank you.</p>
+  </div>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name:</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required/>
+    </div>
+     <div class="form-group">
+      <label id="email-label" for="email">Email:</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your Email"
+        required
+      />
+    </div>
+     <div class="form-group">
+      <label id="number-label" for="number"
+        >Age<span class="clue">(required):</span></label>
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Age"
+      />
+    </div>
+    
+    <div class="form-group">
+      <p>Sex:</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select an option </option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="preferNo">Prefer not to    say</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+     <div class="form-group">
+      <p>Have you ever been diagnosed with Typhoid fever?      </p>
+      <label>
+        <input
+          name="user-recommend"
+          value="Yes"
+          type="radio"
+          class="input-radio"
+          checked
+        />Yes</label>
+      <label>
+        <input
+          name="user-recommend"
+          value="No"
+          type="radio"
+          class="input-radio"/>No</label>
+    </div>
+    <div>
+      <p>If yes, when did you get infected?</p>
+      <textarea
+        id="Age"
+        class="input-textarea"
+        name="comment"
+        placeholder="Age you got infected"
+      ></textarea>
+    </div>
+     <div class="form-group">
+      <p>How long did the fever last for?</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="< 1 week"
+          type="radio"
+          class="input-radio"/>1 week or less</label>
+      <label>
+        <input
+          name="user-recommend"
+          value="> 1 week"
+          type="radio"
+          class="input-radio"/>More than a week</label>
+
+      <label><input
+          name="user-recommend"
+          value="> 2 weeks"
+          type="radio"
+          class="input-radio"/>More than two weeks</label>
+       
+       <label><input
+          name="user-recommend"
+          value="4 weeks"
+          type="radio"
+          class="input-radio"/>Up to a month</label>
+       
+       <label><input
+          name="user-recommend"
+          value="others"
+          type="radio"
+          class="input-radio"/>Others: <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder=""
+        /></label>
+    </div>
+    <div class="form-group">
+      <p>
+       What were some of your symptoms during illness?
+        <span class="clue">(Check all that apply)</span>
+      </p>
+      
+      <label><input
+          name="prefer"
+          value="front-end-projects"
+          type="checkbox"
+          class="input-checkbox"/>Weakness</label>
+      <label><input
+          name="prefer"
+          value="front-end-projects"
+          type="checkbox"
+          class="input-checkbox"/>Stomach pain</label>
+      <label><input
+          name="prefer"
+          value="front-end-projects"
+          type="checkbox"
+          class="input-checkbox"/>Mild to Severe Headache</label>
+     <label><input
+          name="prefer"
+          value="front-end-projects"
+          type="checkbox"
+          class="input-checkbox"/>Diarrhea or constipation</label>
+      <label><input
+          name="prefer"
+          value="front-end-projects"
+          type="checkbox"
+          class="input-checkbox"/>Cough</label>
+       <label><input
+          name="prefer"
+          value="front-end-projects"
+          type="checkbox"
+          class="input-checkbox"/>Loss of appetite</label>
+      <label><input
+          name="prefer"
+          value="front-end-projects"
+          type="checkbox"
+          class="input-checkbox"/>Others: <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your symptoms"
+        /></label>
+      
+      <div class="form-group">
+      <p>How severe was your fever?</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="1"
+          type="radio"
+          class="input-radio"/>1</label>
+        
+        <label>
+        <input
+          name="user-recommend"
+          value="2"
+          type="radio"
+          class="input-radio"/>2</label>
+        
+        <label>
+        <input
+          name="user-recommend"
+          value="3"
+          type="radio"
+          class="input-radio"/>3</label>
+        
+        <label>
+        <input
+          name="user-recommend"
+          value="4"
+          type="radio"
+          class="input-radio"/>4</label>
+        
+        <label>
+        <input
+          name="user-recommend"
+          value="5"
+          type="radio"
+          class="input-radio"/>5</label>
+      </div>
+      
+       <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+      
+</form>
+</div>
